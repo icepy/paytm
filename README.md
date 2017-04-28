@@ -1,26 +1,48 @@
 # Paytm Weex and Web
 
+this project is developed using weex,its mobile develop framework,so look weex guide [weex](https://weex.apache.org/cn/) and vue guide [vue](https://cn.vuejs.org/)。
+
 ### Build Setup
 
 ```bash
 # install dependencies
 npm install
 
-# 启动 vue web dev 环境，自启服务器 at localhost:8080
+# serve with hot reload at localhost:8080
 npm run dev:web
 
-# build vue web release 环境
+# build for web release with minification
 npm run build:web
 
-# 启动 一个临时服务器，用于访问 weex bundle 资源
+# start serve 8089
 python -m SimpleHTTPServer 8089
 
-# 启动 weex dev 环境
+# build for weex dev
 npm run dev:weex
 
-# 启动 weex release 环境
+# build for weex release
 npm run build:weex
 
-# 编译可发布的Weex和Vue项目资源
+# build for weex release and web release
 npm run build
+```
+
+see package.json ! configuration
+
+### How ?
+
+if is Weex page ，it is diff from web ,u just configuration `dd_wx_tpl` GET param in Web URL：
+
+```bash
+
+http://localhost?dd_wx_tpl=http://localhost/weex-bundle.js
+
+```
+
+if Web page , direct access to the Web URL:
+
+```bash
+
+http://localhost
+
 ```
