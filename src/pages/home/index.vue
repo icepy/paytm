@@ -52,7 +52,7 @@
       'https://aflow.dingtalk.com/dingtalk/mobile/homepage.htm#custom?corpid=ding40c711eecf67ce54&showmenu=true&dd_progress=false&dd_share=false&TemplateManager=activate&processCode=PROC-A4D02E4D-7197-4A19-998A-8889F2002D71&formUuid=FORM-7FFA675C-DE31-40F6-A328-A544F8179783',
       'https://aflow.dingtalk.com/dingtalk/mobile/homepage.htm#custom?corpid=ding40c711eecf67ce54&showmenu=true&dd_progress=false&dd_share=false&TemplateManager=activate&processCode=PROC-64DF3BCF-0A70-494C-B206-5A1530E29977&formUuid=FORM-92AC0A06-BA77-496E-A206-195A5EF908CF',
       'https://landray.dingtalkapps.com/alid/app/report/createReport_new.html?id=15bb4602311bafdf6134799457db1982&skip=0&corpid=ding40c711eecf67ce54&dd_progress=false',
-      ''
+      'https://landray.dingtalkapps.com/alid/app/report/createReport_new.html?id=15bb4605b26767793344e624d78a4a97&skip=0&corpid=ding40c711eecf67ce54&dd_progress=false'
     ];
 
     function toast(msg){
@@ -61,6 +61,7 @@
         duration: 2
       });
     }
+    
     function openUrl(linkUrl){
       dingtalk.ready(function(){
         const dd = dingtalk.apis;
