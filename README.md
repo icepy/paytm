@@ -1,6 +1,16 @@
-# Paytm Weex and Web
+# Dingtalk Paytm Homepage
 
-this project is developed using weex,its mobile develop framework,so look weex guide [weex](https://weex.apache.org/cn/) and vue guide [vue](https://cn.vuejs.org/)。
+This project is powered by [weex](https://weex.apache.org), which is an awesome solution for building [Dingtalk microapp](https://open-doc.dingtalk.com/docs/doc.htm?treeId=171&articleId=104910&docType=1) with extremely high performanece. 
+
+Usually you can build your microapp in Dingtalk as a traditional webapp, however sometimes your users are unsatisfied with the poor performance of your webapp. Why? Nowadays the gap between web and native, in the aspect of performance and user experience, is still wide. You might feel frustrated to optimize the performance of your webapp, but finally bring just a little improvement. That is why we need weex.
+
+With the help of weex, you can focus on your business, no more need to worry about the performance, just enjoy the fun of coding and building your microapp. The microapps based on weex will look so elegant and run so smoothly that your users cannot tell the difference between a weex microapp developed by javascript and a native user interface developed by java or objective-c.
+
+The code you write for a weex microapp is javascript and css, you will feel so familiar if you are a web developer. Under the hood, weex render engine parse your code and render a completely native user interface, rather than a web user interface. 
+
+You can refer to the doc of [weex](https://weex.apache.org/cn/) and [vue](https://cn.vuejs.org/) for more information.
+
+Enjoy the fun of building dingtalk microapp with weex ☺
 
 ### Build Setup
 
