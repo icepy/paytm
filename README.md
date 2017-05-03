@@ -24,10 +24,7 @@ npm run dev:web
 # build for web release with minification
 npm run build:web
 
-# start serve 8089
-python -m SimpleHTTPServer 8089
-
-# build for weex dev
+# build for weex dev reload at localhost:8089
 npm run dev:weex
 
 # build for weex release
