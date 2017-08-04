@@ -11,7 +11,7 @@
         <div class="app-item" v-on:click="onAppItemUrl(0)">
           <div class="item-image-container">
             <div class="item-image-radius">
-              <image class="item-image" src="//gw.alicdn.com/tps/TB1Ez8XOpXXXXa5XpXXXXXXXXXX-102-102.png"></image>
+              <image class="item-image" src="https://gw.alicdn.com/tps/TB1Ez8XOpXXXXa5XpXXXXXXXXXX-102-102.png"></image>
             </div>
           </div>
           <text class="item-text">Unpaid Leave</text>
@@ -19,7 +19,7 @@
         <div class="app-item" v-on:click="onAppItemUrl(1)">
           <div class="item-image-container">
             <div class="item-image-radius">
-              <image class="item-image" src="//gw.alicdn.com/tps/TB1zXtqOpXXXXa6XXXXXXXXXXXX-102-102.png"></image>
+              <image class="item-image" src="https://gw.alicdn.com/tps/TB1zXtqOpXXXXa6XXXXXXXXXXXX-102-102.png"></image>
             </div>
           </div>
           <text class="item-text">Casual Leave</text>
@@ -27,7 +27,7 @@
         <div class="app-item" v-on:click="onAppItemUrl(2)">
           <div class="item-image-container">
             <div class="item-image-radius">
-              <image class="item-image" src="//static.dingtalk.com/media/lALOD5pFIMzIzMg_200_200.png"></image>
+              <image class="item-image" src="https://static.dingtalk.com/media/lALOD5pFIMzIzMg_200_200.png"></image>
             </div>
           </div>
           <text class="item-text">Ding Mail</text>
@@ -35,7 +35,7 @@
         <div class="app-item" v-on:click="onAppItemUrl(3)">
           <div class="item-image-container">
             <div class="item-image-radius">
-              <image class="item-image" src="//static.dingtalk.com/media/lALODCPXR8zIzMg_200_200.png"></image>
+              <image class="item-image" src="https://static.dingtalk.com/media/lALODCPXR8zIzMg_200_200.png"></image>
             </div>
           </div>
           <text class="item-text">Ding Drive</text>
@@ -43,7 +43,7 @@
         <div class="app-item" v-on:click="onAppItemUrl(4)">
           <div class="item-image-container">
             <div class="item-image-radius">
-              <image class="item-image" src="//static.dingtalk.com/media/lALOHTFw58zIzMg_200_200.png"></image>
+              <image class="item-image" src="https://static.dingtalk.com/media/lALOHTFw58zIzMg_200_200.png"></image>
             </div>
           </div>
           <text class="item-text">Video Conference</text>
