@@ -57,8 +57,8 @@
     import dingtalk from 'weex-dingtalk';
     const modal = weex.requireModule('modal');
     const gotoUrl = [
-      'https://aflow.dingtalk.com/dingtalk/mobile/homepage.htm#custom?corpid=ding9a17ecce32888d4e&showmenu=true&dd_progress=false&dd_share=false&TemplateManager=activate&processCode=PROC-3KYJ33FV-KDBMOB2BMG1YA2UMKY1R1-SYC9TR4J-D1&formUuid=FORM-3KYJ33FV-KDBMOB2BMG1YA2UMKY1R1-SYC9TR4J-C1',
-      'https://aflow.dingtalk.com/dingtalk/mobile/homepage.htm#custom?corpid=ding9a17ecce32888d4e&showmenu=true&dd_progress=false&dd_share=false&TemplateManager=activate&processCode=PROC-RIYJB6OV-3BSLRFX2S40QR3PYOA8H2-S5UOPZ3J-8&formUuid=FORM-WIYJNNZV-EASLHWTSSQ4B314AU06Y3-UPCYM34J-04',
+      'https://aflow.dingtalk.com/dingtalk/mobile/homepage.htm#custom?corpid=ding40c711eecf67ce54&showmenu=true&dd_progress=false&dd_share=false&TemplateManager=activate&processCode=PROC-94LKOG4W-8I5NRVL1NP3WI1AXBPO32-QDWDLW5J-5',
+      'https://aflow.dingtalk.com/dingtalk/mobile/homepage.htm#custom?corpid=ding40c711eecf67ce54&showmenu=true&dd_progress=false&dd_share=false&TemplateManager=activate&processCode=PROC-FF6YHERSO2-AOTCDAPYTWZ0ARH4MOJQ1-LAE4VERI-F3',
     ];
 
     const apps = [{
@@ -82,7 +82,7 @@
     ];
 
     for(let app of apps){
-      let url = 'dingtalk://dingtalkclient/action/switchtab?index=2&name=work&scene=1&corpid=ding9a17ecce32888d4e&appid=' + app.appid;
+      let url = 'dingtalk://dingtalkclient/action/switchtab?index=2&name=work&scene=1&corpid=ding40c711eecf67ce54&appid=' + app.appid;
       gotoUrl.push(url);
     }
 
