@@ -106,7 +106,7 @@
         name: 'home',
         data: function(){
             return {
-              "linkUrl": "https://alimarket.m.taobao.com/markets/dingtalk/cydd?lwfrom=20161118115327653",
+              "linkUrl": "https://paytm.com",
               "imgUrl": "https://gw.alicdn.com/tfs/TB1Qf_eQVXXXXazXXXXXXXXXXXX-1124-453.png"
             }
         },
