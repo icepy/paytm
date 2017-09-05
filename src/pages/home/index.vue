@@ -11,18 +11,42 @@
         <div class="app-item" v-on:click="onAppItemUrl(0)">
           <div class="item-image-container">
             <div class="item-image-radius">
-              <image class="item-image" src="https://gw.alicdn.com/tps/TB1hcBoOpXXXXbPXXXXXXXXXXXX-102-102.png"></image>
+              <image class="item-image" src="https://gw.alicdn.com/tps/TB1Ez8XOpXXXXa5XpXXXXXXXXXX-102-102.png"></image>
             </div>
           </div>
-          <text class="item-text">Facilities Helpdesk</text>
+          <text class="item-text">Unpaid Leave</text>
         </div>
         <div class="app-item" v-on:click="onAppItemUrl(1)">
           <div class="item-image-container">
             <div class="item-image-radius">
-              <image class="item-image" src="https://gw.alicdn.com/tps/TB1Y57ZOXXXXXXwaXXXXXXXXXXX-102-102.png"></image>
+              <image class="item-image" src="https://gw.alicdn.com/tps/TB1zXtqOpXXXXa6XXXXXXXXXXXX-102-102.png"></image>
             </div>
           </div>
-          <text class="item-text">PLI Approval Form</text>
+          <text class="item-text">Casual Leave</text>
+        </div>
+        <div class="app-item" v-on:click="onAppItemUrl(2)">
+          <div class="item-image-container">
+            <div class="item-image-radius">
+              <image class="item-image" src="https://static.dingtalk.com/media/lALOD5pFIMzIzMg_200_200.png"></image>
+            </div>
+          </div>
+          <text class="item-text">Ding Mail</text>
+        </div>
+        <div class="app-item" v-on:click="onAppItemUrl(3)">
+          <div class="item-image-container">
+            <div class="item-image-radius">
+              <image class="item-image" src="https://static.dingtalk.com/media/lALODCPXR8zIzMg_200_200.png"></image>
+            </div>
+          </div>
+          <text class="item-text">Ding Drive</text>
+        </div>
+        <div class="app-item" v-on:click="onAppItemUrl(4)">
+          <div class="item-image-container">
+            <div class="item-image-radius">
+              <image class="item-image" src="https://static.dingtalk.com/media/lALOHTFw58zIzMg_200_200.png"></image>
+            </div>
+          </div>
+          <text class="item-text">Video Conference</text>
         </div>
       </div>
     </div>
@@ -33,9 +57,34 @@
     import dingtalk from 'weex-dingtalk';
     const modal = weex.requireModule('modal');
     const gotoUrl = [
-      'https://aflow.dingtalk.com/dingtalk/mobile/homepage.htm#custom?corpid=ding40c711eecf67ce54&showmenu=true&dd_progress=false&dd_share=false&TemplateManager=activate&processCode=PROC-EF6YNNYRN2-OBSLPKNVNG80F159Z7MO2-128FOZ3J-F&formUuid=FORM-EF6YNNYRN2-OBSLPKNVNG80F159Z7MO2-128FOZ3J-E',
-      'https://aflow.dingtalk.com/dingtalk/mobile/homepage.htm#custom?corpid=ding40c711eecf67ce54&showmenu=true&dd_progress=false&dd_share=false&TemplateManager=activate&processCode=PROC-RIYJB6OV-3BSLRFX2S40QR3PYOA8H2-S5UOPZ3J-8&formUuid=FORM-WIYJNNZV-EASLHWTSSQ4B314AU06Y3-UPCYM34J-04',
+      'https://aflow.dingtalk.com/dingtalk/mobile/homepage.htm#custom?corpid=ding40c711eecf67ce54&showmenu=true&dd_progress=false&dd_share=false&TemplateManager=activate&processCode=PROC-94LKOG4W-8I5NRVL1NP3WI1AXBPO32-QDWDLW5J-5',
+      'https://aflow.dingtalk.com/dingtalk/mobile/homepage.htm#custom?corpid=ding40c711eecf67ce54&showmenu=true&dd_progress=false&dd_share=false&TemplateManager=activate&processCode=PROC-FF6YHERSO2-AOTCDAPYTWZ0ARH4MOJQ1-LAE4VERI-F3',
     ];
+
+    const apps = [{
+        name: 'mail',
+        text: 'Ding Mail',
+        appid: '-5',
+        icon: 'lALOD5pFIMzIzMg'
+      },
+      {
+        name: 'drive',
+        text: 'Ding Drive',
+        appid: '-3',
+        icon: 'lALODCPXR8zIzMg'
+      },
+      {
+        name: 'videoconf',
+        text: 'Video Conference',
+        appid: '1288',
+        icon: 'lALOHTFw58zIzMg'
+      }
+    ];
+
+    for(let app of apps){
+      let url = 'dingtalk://dingtalkclient/action/switchtab?index=2&name=work&scene=1&corpid=ding40c711eecf67ce54&appid=' + app.appid;
+      gotoUrl.push(url);
+    }
 
     function toast(msg){
       modal.toast({
